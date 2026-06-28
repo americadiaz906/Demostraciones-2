@@ -1,6 +1,29 @@
-# 🎯 Memorama de Profesiones
+﻿# 🏘️ Oficios y Profesiones de Tecolotlán
 
-Juego de memoria interactivo con temática de profesiones. Desarrollado con HTML, CSS y JavaScript vanilla.
+**Juego interactivo educativo** para niños de preescolar (3 a 6 años) ambientado en **Tecolotlán, Jalisco**.  
+Desarrollado con HTML, CSS y JavaScript vanilla.
+
+---
+
+## 🎯 Objetivo Educativo
+
+Evaluar si el niño o niña reconoce que las personas realizan actividades para el beneficio de su comunidad, fomentando el sentido del **Bien Común**.
+
+### Campos formativos que cubre:
+- **Ética, Naturaleza y Sociedades** — Identificar cambios en el tiempo y los servicios que contribuyen al bienestar común.
+- **De lo Humano y lo Comunitario** — Fortalecer la seguridad y confianza al interactuar con su entorno.
+- **Lenguajes** — Promover la narración de historias y la expresión de ideas.
+- **Saberes y Pensamiento Científico** — Conteo y números (Pizza Numérica).
+
+---
+
+## 🎮 Los 3 Juegos
+
+| Módulo | Descripción |
+|--------|-------------|
+| 🎁 **Cajita Misteriosa** | Caja interactiva de la que salen herramientas de trabajo. El niño debe clasificarlas según a qué profesión pertenecen. |
+| 🍕 **Pizza Numérica** | Actividad de conteo: el niño debe colocar una cantidad específica de ingredientes en una pizza. Dificultad ajustable (1°, 2° o 3° de preescolar). |
+| 🎡 **Feria de Profesiones** | Módulo de exploración donde el niño selecciona un personaje y escucha un mensaje auditivo explicando su importancia para la comunidad. |
 
 ---
 
@@ -8,103 +31,53 @@ Juego de memoria interactivo con temática de profesiones. Desarrollado con HTML
 
 | Funcionalidad | Descripción |
 |--------------|-------------|
-| 🎨 **Diseño moderno** | Fondo oscuro con degradados vibrantes, formas flotantes y efectos glassmorphism |
-| 👔 **18 profesiones** | Doctor, maestra, chef, bombero, piloto, astronauta, programadora y más |
-| ⚡ **3 dificultades** | Fácil (8 pares), Medio (10 pares), Difícil (12 pares) |
-| ⏱️ **Temporizador** | Mide el tiempo de cada partida |
-| 👆 **Contador de movimientos** | Registra cada intento |
-| ⭐ **Sistema de estrellas** | Calificación de 1 a 3 estrellas según eficiencia |
-| 🎊 **Confetti de victoria** | Animación celebratoria con partículas de colores |
-| 🔄 **Efecto 3D** | Volteo realista de cartas con perspectiva |
+| 🎨 **Diseño infantil** | Colores vibrantes, fondo de cielo con nubes animadas, estilo caricatura |
+| 👔 **9 profesiones** | Campesino, comerciante, bombero, policía, dentista, recolector, maestra, estilista, constructor |
+| 🗣️ **Instrucciones por voz** | Todas las interacciones guiadas con síntesis de voz en español |
+| 👆 **Interacción táctil** | Diseñado para tablets y dispositivos móviles |
+| 🎊 **Confetti** | Animación celebratoria al acertar |
+| ♿ **Accesibilidad** | Navegación con teclado (Tab + Enter/Espacio), soporte para lectores de pantalla |
 | 📱 **Responsive** | Adaptado a móvil, tablet y escritorio |
-| ♿ **Accesibilidad** | Navegación completa con teclado (Tab + Enter/Espacio) |
 
 ---
 
 ## 📁 Estructura del proyecto
 
 ```
-memorama-profesiones/
-├── index.html          ← Página principal
-├── css/
-│   └── main.css        ← Estilos, animaciones y diseño responsive
-├── js/
-│   └── main.js         ← Lógica del juego (clase Memorama)
-└── README.md           ← Este archivo
+Demostraciones-2/
+├── index.html                     ← Página principal (el juego completo)
+├── oficios-tecolotlan-mejorado.html ← Versión alternativa del juego
+├── README.md                      ← Este archivo
+├── planeacion didactica.md        ← Planeación educativa
+└── juego profesiones              → (placeholder vacío)
 ```
 
 ---
 
 ## 🚀 Cómo usar
 
-### Opción 1: Abrir directamente
+### Abrir desde GitHub Pages:
 
-1. Descarga o clona la carpeta del proyecto
+👉 **[https://americadiaz906.github.io/Demostraciones-2/](https://americadiaz906.github.io/Demostraciones-2/)**
+
+O directamente:
+- [https://americadiaz906.github.io/Demostraciones-2/oficios-tecolotlan-mejorado.html](https://americadiaz906.github.io/Demostraciones-2/oficios-tecolotlan-mejorado.html)
+
+### Opción local:
+
+1. Descarga o clona el repositorio
 2. Abre `index.html` en tu navegador
 3. ¡A jugar!
-
-### Opción 2: Con servidor local
-
-```bash
-# Con Node.js
-npx serve memorama-profesiones
-
-# Con Python
-cd memorama-profesiones
-python3 -m http.server 3000
-```
-
----
-
-## 🎮 Cómo jugar
-
-1. Haz clic en una carta para voltearla y ver la profesión oculta
-2. Haz clic en otra carta para intentar encontrar el par
-3. Si coinciden, las cartas quedan descubiertas con un efecto verde
-4. Si no coinciden, se voltean de nuevo tras una breve pausa
-5. Encuentra todos los pares para ganar
-6. Usa el botón **⚡ Fácil / Medio / Difícil** para cambiar de nivel
-7. Usa **🔄 Reiniciar** para empezar de nuevo
-
----
-
-## 🧩 Personalización
-
-### Agregar más profesiones
-
-Edita el arreglo `PROFESSIONS` en `js/main.js`:
-
-```javascript
-const PROFESSIONS = [
-  { id: 'doctor', emoji: '👨‍⚕️', label: 'Doctor' },
-  // Agrega más profesiones aquí:
-  { id: 'veterinarian', emoji: '👨‍⚕️🐾', label: 'Veterinario' },
-  // ...
-];
-```
-
-### Cambiar los colores
-
-Edita las variables CSS en `css/main.css`:
-
-```css
-:root {
-  --color-primary: #8b5cf6;   /* Púrpura principal */
-  --color-pink: #ec4899;      /* Rosa acento */
-  --color-bg-start: #0f0c29;  /* Fondo oscuro */
-  /* ... más variables ... */
-}
-```
 
 ---
 
 ## 🛠️ Tecnologías
 
-- **HTML5** – Semántico y accesible
-- **CSS3** – Variables, Grid, Flexbox, animaciones 3D, glassmorphism
-- **JavaScript (ES6+)** – Clases, módulos, template literals, Fisher-Yates shuffle
+- **HTML5** — Semántico y accesible
+- **CSS3** — Variables, Grid, Flexbox, animaciones, diseño responsive
+- **JavaScript (ES6+)** — Clases, síntesis de voz, manipulación del DOM
 
-Cero dependencias externas (solo la fuente Nunito desde Google Fonts).
+Cero dependencias externas (solo Google Fonts: Fredoka y Nunito).
 
 ---
 
@@ -116,4 +89,5 @@ MIT — libre para usar, modificar y compartir.
 
 ## 👤 Autor
 
-Desarrollado como proyecto educativo de memorama. ¡Diviértete jugando!
+Proyecto educativo desarrollado para la comunidad de **Tecolotlán, Jalisco**.  
+*Fork del repositorio original de [Fany-123](https://github.com/Fany-123/Demostraciones-2).*
